@@ -208,7 +208,7 @@ void operator<<(ostream& cout, ArrayList& ar) {
 void operator>>(istream& cin, ArrayList& ar) {
 	int capacity = ar.GetCapacity();
 	int* Data = ar.GetData();
-	std::cout << "Enter " << ar.GetSize() << " elements:" << "\n";
+	cout << "Enter " << ar.GetSize() << " elements:" << "\n";
 	for (int i = 0; i < ar.GetSize(); i++) {
 		cin >> Data[i];
 	}
